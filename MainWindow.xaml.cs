@@ -24,5 +24,10 @@ namespace Sistema_de_Gestión_para_un__Bando_de_Sangre
         {
             InitializeComponent();
         }
+
+        private void BnLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

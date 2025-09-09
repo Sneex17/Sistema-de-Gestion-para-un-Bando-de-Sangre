@@ -5,9 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_de_Gestión_para_un__Bando_de_Sangre"
         mc:Ignorable="d"
-        Title="Sistema de Gestión de Sangre" Height="450" Width="800">
-    <Grid x:Name="inicio">
-        <Button Content="Iniciar" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Height="43" Width="156"/>
+        Title="Sistema de Gestión de Sangre" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
 
-    </Grid>
+    <DockPanel x:Name="Panle">
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/Photos/Fondo-Inicio.png"></ImageBrush>
+        </DockPanel.Background>
+
+        <Grid x:Name="inicio">
+            <StackPanel Width="250"
+                        Grid.Row="2"
+                        Orientation="Vertical"
+                        Margin="0,35,0,0">
+                
+                <Image Source="/Photos/Logo-inicio.png"
+                       Width="100" Height="100"/>
+
+                <TextBlock Text="Cada gota cuenta. Tu generosidad marca la diferencia."
+                           Foreground="red"
+                           FontSize="16"
+                           FontWeight="Medium"
+                           FontFamily="Impact"
+                           TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Margin="0,5,0,0"/>
+
+                <TextBlock Text="Usuario"
+                           Foreground="Black"
+                           FontSize="14"
+                           FontWeight="Medium"
+                           FontFamily="Times New Roman"
+                           Margin="0,5,0,0"/>
+
+                <TextBox x:Name="txtUsuario"
+                         FontSize="14"
+                         FontWeight="Medium"
+                         Foreground="black"
+                         Background="Transparent"
+                         BorderBrush="Red"
+                         BorderThickness="0,0,0,2"
+                         VerticalContentAlignment="Center"
+                         Margin="0,2,0,0">
+                </TextBox>
+
+                <TextBlock Text="Contraseña"
+                           Foreground="Black"
+                           FontSize="14"
+                           FontWeight="Medium"
+                           FontFamily="Times New Roman"
+                           Margin="0,5,0,0"/>
+
+                <PasswordBox x:Name="txtPass"
+                         FontSize="14"
+                         FontWeight="Medium"
+                         Foreground="black"
+                         Background="Transparent"
+                         BorderBrush="Red"
+                         BorderThickness="0,0,0,2"
+                         VerticalContentAlignment="Center"
+                         Margin="0,2,0,0">
+                </PasswordBox>
+
+                <Button x:Name="BnLogin"
+                        Content="Iniciar Sesion"
+                        Click="BnLogin_Click"
+                        FontSize="16"
+                        Foreground="white"
+                        FontFamily="Impact"
+                        Background="Red"
+                        Margin="17,27,17,0"/>
+            </StackPanel>
+           
+
+
+        </Grid>
+    </DockPanel>
 </Window>
