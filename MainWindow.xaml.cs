@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Sistema_de_Gestión_para_un__Bando_de_Sangre.Clases;
+using Sistema_de_Gestión_para_un__Bando_de_Sangre.Windows;
 namespace Sistema_de_Gestión_para_un__Bando_de_Sangre
 {
     /// <summary>
@@ -41,7 +42,10 @@ namespace Sistema_de_Gestión_para_un__Bando_de_Sangre
                 {
                     if (reader.HasRows == true)
                     {
-                        MessageBox.Show("Hola");
+                        Inicio inicio = new Inicio();
+                        inicio.Show();
+                        this.Hide();
+                        //MessageBox.Show("Hola");
                     }
 
                 }
