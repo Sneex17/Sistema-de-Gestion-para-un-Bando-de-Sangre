@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Sistema_de_Gestión_para_un__Bando_de_Sangre.Clases;
 namespace Sistema_de_Gestión_para_un__Bando_de_Sangre
 {
     /// <summary>
@@ -27,7 +28,26 @@ namespace Sistema_de_Gestión_para_un__Bando_de_Sangre
 
         private void BnLogin_Click(object sender, RoutedEventArgs e)
         {
+            Usuarios us = new Usuarios();
+            us.usuario = txtUsuario.Text;
+            us.pass = txtPass.Password;
 
+            using (SqlConnection login = ConnectioDB.DBconnection())
+            {
+                string query = $"select * from Usuarios where Usuario = '{us.usuario}' and Pass = '{us.pass}'";
+                SqlCommand con = new SqlCommand(query, login);
+                SqlDataReader reader = con.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader.HasRows == true)
+                    {
+                        MessageBox.Show("Hola");
+                    }
+
+                }
+                reader.Close();
+            }
+            
         }
     }
 }
