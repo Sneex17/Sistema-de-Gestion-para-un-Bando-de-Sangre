@@ -11,7 +11,7 @@
 
     <DockPanel x:Name="Panle">
         <DockPanel.Background>
-            <ImageBrush ImageSource="/Photos/Fondo-Inicio.png"></ImageBrush>
+            <ImageBrush ImageSource="/Photos/Fondo-Sistema.png"></ImageBrush>
         </DockPanel.Background>
 
         <Grid x:Name="inicio" Height="700">
@@ -24,7 +24,7 @@
                        Width="100" Height="100"/>
 
                 <TextBlock Text="Cada gota cuenta. Tu generosidad marca la diferencia."
-                           Foreground="red"
+                           Foreground="#003366"
                            FontSize="16"
                            FontWeight="Medium"
                            FontFamily="Impact"
@@ -44,7 +44,7 @@
                          FontWeight="Medium"
                          Foreground="black"
                          Background="Transparent"
-                         BorderBrush="Red"
+                         BorderBrush="#000080"
                          BorderThickness="0,0,0,2"
                          VerticalContentAlignment="Center"
                          Margin="0,2,0,0">
@@ -62,7 +62,7 @@
                          FontWeight="Medium"
                          Foreground="black"
                          Background="Transparent"
-                         BorderBrush="Red"
+                         BorderBrush="#000080"
                          BorderThickness="0,0,0,2"
                          VerticalContentAlignment="Center"
                          Margin="0,2,0,0">
@@ -74,7 +74,7 @@
                         FontSize="16"
                         Foreground="white"
                         FontFamily="Impact"
-                        Background="Red"
+                        Background="#003366"
                         Margin="17,27,17,0"/>
             </StackPanel>
 

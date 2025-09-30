@@ -9,6 +9,70 @@
         WindowStartupLocation="CenterScreen"
         Icon="/Photos/Logo-inicio.png">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel x:Name="PanelBotones"
+                   Grid.Column="0"
+                   
+                   Background="#004766">
+            <Button x:Name="BuRgDonante"
+                    Content="Registrar Donante"
+                    FontFamily="Arial Black"
+                    Click="BuRgDonante_Click"
+                    Background="#003247"
+                    Foreground="White"
+                    Margin="0,100,0,0" 
+                    Height="40"
+                    />
+            <Button x:Name="BuInformacion"
+                    Content="Informacion"
+                    Click="BuInformacion_Click"
+                    FontFamily="Arial Black"
+                    Background="#003247"
+                    Foreground="White"
+                    Margin="0,1,0,0"
+                    Height="40"
+                    />
+            <Button x:Name="BuCompatible"
+                    Content="Sangre Compatible"
+                    FontFamily="Arial Black"
+                    Click="BuCompatible_Click"
+                    Background="#003247"
+                    Foreground="White"
+                    Margin="0,1,0,0"
+                    Height="40"
+                    />
+            <Button x:Name="BuTypeSangre"
+                    Content="Tipos de Sangre"
+                    FontFamily="Arial Black"
+                    Click="BuTypeSangre_Click"
+                    Background="#003247"
+                    Foreground="White"
+                    Margin="0,1,0,0"
+                    Height="40"
+                    />
+            <Button x:Name="BuSalir"
+                    Content="Cerrar Session"
+                    FontFamily="Arial Black"
+                    Click="BuSalir_Click"
+                    Background="#003247"
+                    Foreground="White"
+                    Margin="0,350,0,0"
+                    Height="40"
+                    />
+
+
+
+
+        </StackPanel>
+        <DockPanel x:Name="PanelInterfaz"
+                   Grid.Column="1"
+                   Background="#80D9FF">
+
+        </DockPanel>
     </Grid>
 </Window>

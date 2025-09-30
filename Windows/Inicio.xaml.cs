@@ -23,5 +23,42 @@ namespace Sistema_de_Gestión_para_un__Bando_de_Sangre.Windows
         {
             InitializeComponent();
         }
+
+        private void RgDonante_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DtDonante_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuInformacion_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuRgDonante_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuCompatible_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuTypeSangre_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            this.Hide();
+        }
     }
 }
